@@ -95,3 +95,6 @@ buildNumber.properties
 /dubbo-practice.iml
 /.mvn/
 /dubboDemo/dubboDemo.iml
+/dubbo.iml
+/dubboDemo/dubbo-demo.iml
+/dubboProvider/dubboProvider.iml
