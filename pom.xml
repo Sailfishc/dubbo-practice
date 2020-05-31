@@ -8,7 +8,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>dubbo</name>
+    <name>dubbo-practice</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -20,18 +20,19 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <junit.version>4.12</junit.version>
-        <dubbo.version>2.7.7</dubbo.version>
-<!--        <dubbo.version>2.6.5</dubbo.version>-->
+        <dubbo.apache.version>2.7.7</dubbo.apache.version>
+        <dubbo.version>2.6.5</dubbo.version>
         <netty.version>4.1.44.Final</netty.version>
         <spring.version>4.3.16.RELEASE</spring.version>
         <dubbo.rpc.version>2.6.3</dubbo.rpc.version>
-        <curator.version>2.12.0</curator.version>
+        <curator.version>4.0.1</curator.version>
         <validation-api.version>1.1.0.Final</validation-api.version>
         <hibernate-validator.version>4.2.0.Final</hibernate-validator.version>
         <resteasy.version>3.0.19.Final</resteasy.version>
         <curator-client.version>2.12.0</curator-client.version>
         <swagger.version>1.5.19</swagger.version>
         <spring-boot.version>1.5.13.RELEASE</spring-boot.version>
+        <guava.version>27.1-jre</guava.version>
     </properties>
 
     <modules>
@@ -48,7 +49,12 @@
                 <version>${junit.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.apache.dubbo</groupId>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo</artifactId>
+                <version>${dubbo.apache.version}</version>
+            </dependency>
+             <dependency>
+                <groupId>com.alibaba</groupId>
                 <artifactId>dubbo</artifactId>
                 <version>${dubbo.version}</version>
             </dependency>
@@ -66,11 +72,6 @@
                 <scope>import</scope>
             </dependency>
             <dependency>
-                <groupId>org.apache.dubbo</groupId>
-                <artifactId>dubbo</artifactId>
-                <version>${dubbo.version}</version>
-            </dependency>
-            <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>dubbo-rpc-rest</artifactId>
                 <version>${dubbo.rpc.version}</version>
@@ -78,6 +79,11 @@
             <dependency>
                 <groupId>org.apache.curator</groupId>
                 <artifactId>curator-framework</artifactId>
+                <version>${curator.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.curator</groupId>
+                <artifactId>curator-client</artifactId>
                 <version>${curator.version}</version>
             </dependency>
             <dependency>
@@ -96,12 +102,6 @@
                 <version>${resteasy.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.apache.curator</groupId>
-                <artifactId>curator-client</artifactId>
-                <version>${curator-client.version}</version>
-            </dependency>
-            <!-- swagger -->
-            <dependency>
                 <groupId>io.swagger</groupId>
                 <artifactId>swagger-annotations</artifactId>
                 <version>${swagger.version}</version>
@@ -119,23 +119,23 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
     <dependencies>
         <dependency>
-            <groupId>org.apache.curator</groupId>
-            <artifactId>curator-framework</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>io.netty</groupId>
-                    <artifactId>netty</artifactId>
-                </exclusion>
-            </exclusions>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.apache.dubbo</groupId>
-            <artifactId>dubbo</artifactId>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
         </dependency>
     </dependencies>
 

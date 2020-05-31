@@ -1,6 +1,6 @@
 package com.sailfish.dubbo.spi;
 
-import com.alibaba.dubbo.common.extension.SPI;
+import org.apache.dubbo.common.extension.SPI;
 
 /**
  * 测试JavaSPI

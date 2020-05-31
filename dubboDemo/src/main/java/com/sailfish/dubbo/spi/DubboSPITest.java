@@ -1,10 +1,9 @@
 package com.sailfish.dubbo.spi;
 
-import com.alibaba.dubbo.common.extension.ExtensionLoader;
 
+import org.apache.dubbo.common.extension.ExtensionLoader;
 import org.junit.Test;
 
-import java.util.ServiceLoader;
 
 /**
  * Dubbo SPI模拟：需要在Robot中添加@SPI注解
