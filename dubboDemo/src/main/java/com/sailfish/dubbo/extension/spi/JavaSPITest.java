@@ -1,4 +1,4 @@
-package com.sailfish.dubbo.spi;
+package com.sailfish.dubbo.extension.spi;
 
 import org.junit.Test;
 

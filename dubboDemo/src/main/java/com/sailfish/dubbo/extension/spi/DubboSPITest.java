@@ -1,4 +1,4 @@
-package com.sailfish.dubbo.spi;
+package com.sailfish.dubbo.extension.spi;
 
 
 import com.alibaba.dubbo.common.extension.ExtensionLoader;
@@ -17,11 +17,10 @@ public class DubboSPITest {
     public void test_java_spi() {
 
         ExtensionLoader<Robot> loader = ExtensionLoader.getExtensionLoader(Robot.class);
-
         final Robot optimusPrime = loader.getExtension("optimusPrime");
         optimusPrime.sayHello();
 
-        final Robot bumblebee = loader.getExtension("bumblebee");
-        bumblebee.sayHello();
+//        final Robot bumblebee = loader.getExtension("bumblebee");
+//        bumblebee.sayHello();
     }
 }

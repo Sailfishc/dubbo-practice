@@ -1,12 +1,9 @@
 package com.sailfish.dubboProvider.provider;
 
-import java.util.Date;
-
+import com.alibaba.dubbo.config.annotation.Service;
 import com.sailfish.dubboApi.DemoService;
 
-import com.alibaba.dubbo.config.annotation.Service;
-
-import org.springframework.stereotype.Component;
+import java.util.Date;
 
 @Service(version = "1.0.0")
 public class DemoServiceImpl implements DemoService {
