@@ -1,7 +1,7 @@
 package com.sailfish.dubbo.spi;
 
 
-import org.apache.dubbo.common.extension.ExtensionLoader;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
 import org.junit.Test;
 
 
