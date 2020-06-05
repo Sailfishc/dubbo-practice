@@ -8,10 +8,12 @@ import com.alibaba.dubbo.common.URL;
  * @Title:
  * @Package com.sailfish.dubbo.extension.adaptive
  * @Description:
- * @date 2020/6/3 5:05 下午
+ * @date 2020/6/5 12:04 上午
  */
-public interface CarMaker {
+public class SpringCloudAdaptiveExt2 implements AdaptiveExt2 {
 
-    Car makeCar(URL url);
-
+    @Override
+    public String echo(String msg, URL url) {
+        return "spring";
+    }
 }

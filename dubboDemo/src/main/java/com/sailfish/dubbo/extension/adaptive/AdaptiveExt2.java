@@ -9,12 +9,12 @@ import com.alibaba.dubbo.common.extension.SPI;
  * @version V1.0
  * @Title:
  * @Package com.sailfish.dubbo.extension.adaptive
- * @Description:  自适应类生成代码
- * @date 2020/5/31 12:34 下午
+ * @Description:
+ * @date 2020/6/5 12:03 上午
  */
-@SPI("impl1")
-public interface SimpleExt {
+@SPI("dubbo")
+public interface AdaptiveExt2 {
 
-    @Adaptive
-    String echo(URL url, String s);
+    @Adaptive(value = "{t}")
+    String echo(String msg, URL url);
 }

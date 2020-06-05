@@ -8,10 +8,12 @@ import com.alibaba.dubbo.common.URL;
  * @Title:
  * @Package com.sailfish.dubbo.extension.adaptive
  * @Description:
- * @date 2020/6/3 4:22 下午
+ * @date 2020/6/5 12:03 上午
  */
-public interface WheelMaker {
+public class DubboAdaptiveExt2 implements AdaptiveExt2 {
 
-    Wheel makeWheel(URL url);
-
+    @Override
+    public String echo(String msg, URL url) {
+        return "dubbo";
+    }
 }
