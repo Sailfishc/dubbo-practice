@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.alibaba.dubbo.config.spring.ServiceBean</OriginalElement>
+  <nodes>
+    <node x="644.0" y="303.0">com.alibaba.dubbo.config.AbstractInterfaceConfig</node>
+    <node x="234.0" y="505.0">org.springframework.context.ApplicationEventPublisherAware</node>
+    <node x="676.5" y="101.0">com.alibaba.dubbo.config.AbstractConfig</node>
+    <node x="655.0" y="202.0">com.alibaba.dubbo.config.AbstractMethodConfig</node>
+    <node x="324.8618421052632" y="404.0">org.springframework.beans.factory.Aware</node>
+    <node x="875.75" y="505.0">org.springframework.context.ApplicationListener</node>
+    <node x="1249.75" y="505.0">org.springframework.beans.factory.InitializingBean</node>
+    <node x="772.6118421052631" y="0.0">java.io.Serializable</node>
+    <node x="845.5" y="101.0">org.springframework.context.ApplicationEvent</node>
+    <node x="938.0" y="404.0">java.util.EventListener</node>
+    <node x="1080.75" y="505.0">org.springframework.beans.factory.DisposableBean</node>
+    <node x="687.0" y="616.0">com.alibaba.dubbo.config.spring.ServiceBean</node>
+    <node x="651.0" y="404.0">com.alibaba.dubbo.config.AbstractServiceConfig</node>
+    <node x="680.0" y="505.0">com.alibaba.dubbo.config.ServiceConfig</node>
+    <node x="518.0" y="505.0">org.springframework.beans.factory.BeanNameAware</node>
+    <node x="0.0" y="505.0">org.springframework.context.ApplicationContextAware</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.context.ApplicationListener" target="org.springframework.context.ApplicationEvent">
+      <point x="-46.25000000000006" y="-25.5" />
+      <point x="922.0" y="480.0" />
+      <point x="927.5" y="480.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="com.alibaba.dubbo.config.spring.ServiceBean" target="org.springframework.context.ApplicationContextAware">
+      <point x="-54.85714285714289" y="-25.5" />
+      <point x="696.1428571428571" y="596.0" />
+      <point x="107.0" y="596.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="org.springframework.context.ApplicationListener" target="java.util.EventListener">
+      <point x="46.24999999999994" y="-25.5" />
+      <point x="1014.5" y="480.0" />
+      <point x="1009.0" y="480.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="com.alibaba.dubbo.config.AbstractConfig" target="java.io.Serializable">
+      <point x="0.0" y="-25.5" />
+      <point x="751.0" y="76.0" />
+      <point x="806.3618421052631" y="76.0" />
+      <point x="-33.75" y="25.5" />
+    </edge>
+    <edge source="org.springframework.context.ApplicationContextAware" target="org.springframework.beans.factory.Aware">
+      <point x="0.0" y="-25.5" />
+      <point x="107.0" y="480.0" />
+      <point x="338.8618421052632" y="480.0" />
+      <point x="-28.0" y="25.5" />
+    </edge>
+    <edge source="com.alibaba.dubbo.config.spring.ServiceBean" target="org.springframework.beans.factory.DisposableBean">
+      <point x="36.571428571428555" y="-25.5" />
+      <point x="787.5714285714286" y="586.0" />
+      <point x="1155.25" y="586.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="com.alibaba.dubbo.config.spring.ServiceBean" target="com.alibaba.dubbo.config.ServiceConfig">
+      <point x="0.0" y="-25.5" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="com.alibaba.dubbo.config.spring.ServiceBean" target="org.springframework.beans.factory.BeanNameAware">
+      <point x="-18.285714285714334" y="-25.5" />
+      <point x="732.7142857142857" y="576.0" />
+      <point x="589.0" y="576.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="org.springframework.context.ApplicationEventPublisherAware" target="org.springframework.beans.factory.Aware">
+      <point x="0.0" y="-25.5" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="com.alibaba.dubbo.config.AbstractInterfaceConfig" target="com.alibaba.dubbo.config.AbstractMethodConfig">
+      <point x="0.0" y="-25.5" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.BeanNameAware" target="org.springframework.beans.factory.Aware">
+      <point x="0.0" y="-25.5" />
+      <point x="589.0" y="480.0" />
+      <point x="394.8618421052633" y="480.0" />
+      <point x="28.000000000000114" y="25.5" />
+    </edge>
+    <edge source="com.alibaba.dubbo.config.spring.ServiceBean" target="org.springframework.context.ApplicationEventPublisherAware">
+      <point x="-36.571428571428555" y="-25.5" />
+      <point x="714.4285714285714" y="586.0" />
+      <point x="366.0" y="586.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="org.springframework.context.ApplicationEvent" target="java.io.Serializable">
+      <point x="-5.6843418860808015E-14" y="-25.5" />
+      <point x="927.4999999999999" y="76.0" />
+      <point x="873.8618421052631" y="76.0" />
+      <point x="33.75" y="25.5" />
+    </edge>
+    <edge source="com.alibaba.dubbo.config.ServiceConfig" target="com.alibaba.dubbo.config.AbstractServiceConfig">
+      <point x="0.0" y="-25.5" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="com.alibaba.dubbo.config.AbstractServiceConfig" target="com.alibaba.dubbo.config.AbstractInterfaceConfig">
+      <point x="0.0" y="-25.5" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="com.alibaba.dubbo.config.AbstractMethodConfig" target="com.alibaba.dubbo.config.AbstractConfig">
+      <point x="0.0" y="-25.5" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="com.alibaba.dubbo.config.spring.ServiceBean" target="org.springframework.context.ApplicationListener">
+      <point x="18.28571428571422" y="-25.5" />
+      <point x="769.2857142857142" y="576.0" />
+      <point x="968.25" y="576.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="com.alibaba.dubbo.config.spring.ServiceBean" target="org.springframework.beans.factory.InitializingBean">
+      <point x="54.85714285714289" y="-25.5" />
+      <point x="805.8571428571429" y="596.0" />
+      <point x="1331.75" y="596.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="707.0" y="333.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
