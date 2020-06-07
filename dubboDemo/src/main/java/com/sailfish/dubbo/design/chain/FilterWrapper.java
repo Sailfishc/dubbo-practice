@@ -49,6 +49,7 @@ public class FilterWrapper {
                 };
             }
         }
+        
         return last;
     }
     
